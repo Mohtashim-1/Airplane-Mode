@@ -31,8 +31,13 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2024-05-08 13:26:56.063930",
+ "links": [
+  {
+   "link_doctype": "Airplane Ticket Doctype",
+   "link_fieldname": "passenger"
+  }
+ ],
+ "modified": "2024-05-08 15:28:50.206141",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Flight Passenger",
