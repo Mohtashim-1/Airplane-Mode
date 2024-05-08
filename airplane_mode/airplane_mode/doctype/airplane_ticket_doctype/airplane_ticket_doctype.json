@@ -18,7 +18,8 @@
   "departure_date",
   "departure_time",
   "column_break_hdra",
-  "duration_of_flight"
+  "duration_of_flight",
+  "amended_from"
  ],
  "fields": [
   {
@@ -105,11 +106,22 @@
    "label": "Status",
    "options": "Booked\nCheck-In\nBoarded",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Airplane Ticket Doctype",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-05-08 15:00:08.972179",
+ "modified": "2024-05-08 16:02:36.415806",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Ticket Doctype",
@@ -131,5 +143,21 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [
+  {
+   "color": "Green",
+   "title": "Booked"
+  },
+  {
+   "color": "Light Blue",
+   "title": "Check-In"
+  },
+  {
+   "color": "Yellow",
+   "title": "Boarded"
+  }
+ ],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }
